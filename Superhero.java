@@ -14,6 +14,7 @@ public class Superhero {
     this.weaponStrength = 0; // Initialize weaponStrength to 0
   }
   // TODO #2: Add missing methods.
+  // Accessor methods for the life attribute
   public void loseLife() {
     this.life = false;
   }
