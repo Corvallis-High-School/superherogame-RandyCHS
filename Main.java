@@ -9,8 +9,7 @@ public class Main {
     System.out.println(batman1);
 
     // TODO #4: Have the 2 superheros created above fight.
-    // Hint: How would you use the superheroFight() method in Main to do that?
-    Main.superheroFight(spiderman1, batman1);    
+    // Hint: How would you use the superheroFight() method in Main to do that?  
     
   }
   
