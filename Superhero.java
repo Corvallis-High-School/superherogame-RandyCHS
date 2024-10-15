@@ -5,14 +5,29 @@ public class Superhero {
   private boolean life;
   private int weaponStrength;
 
-  // TODO #1: Add missing constructors. Note that the life attribute should default to true and the weaponStrength attribute should default to 0.
-
+  // TODO #1: Modify the constructor to set a random weapon strength between 1 and 10 for the superhero.  
+  public Superhero(String superName, String superCostume, String superWeapon) {
+    name = superName;
+    costume = superCostume;
+    weapon = superWeapon;
+    life = true; // Initialize life to true
+    weaponStrength = 0;
+  }
   // TODO #2: Add missing methods.
+  // Accessor methods for the life attribute
+  public void loseLife() {
+    life = false;
+  }
   
   // TODO #3: Including a toString() method (see 2.7) to help with printing out the Superhero details.
-  public String toString(){
-  // all your code below to create a string with details
-    String superHeroDetails = "";
-    return superHeroDetails;
+  @Override
+  public String toString() {
+    return "Superhero{" +
+            "name='" + name + '\'' +
+            ", costume='" + costume + '\'' +
+            ", weapon='" + weapon + '\'' +
+            ", life=" + life +
+            ", weaponStrength=" + weaponStrength +
+            '}';
   }
 }
